@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>break continue return</title>
+    <script type="text/javascript">
+        window.onload = function(){
+
+            /*break + switch, break跳出switch判断，继续完成剩下循环*/
+            /*for(var i = 1; i<10; i++){
+                switch(i){
+                    case 1:
+                        console.log("develop-1");
+                        break;
+                    case 2:
+                        console.log("develop-1");
+                        break;
+                    case 3:
+                        console.log("develop-1");
+                        break;
+                }
+                console.log("第"+i+"次循环"+"...");
+            }*/
+
+            /*return + switch, return跳出所有循环*/
+           /* for(var i = 1; i<10; i++){
+                switch(i){
+                    case 2:
+                        console.log("develop-1");
+                        return;
+                    case 23:
+                        console.log("develop-1");
+                        break;
+                    case 4:
+                        console.log("develop-1");
+                        break;
+                }
+                console.log("第"+i+"次循环"+"...");
+            }*/
+
+            /*break + if, break跳出本层循环*/
+            /*for(var i = 1; i<10; i++){
+                if(i == 1){
+                    console.log(i);
+                    break;
+                }
+                console.log("第"+i+"次循环"+"...");
+            }*/
+
+            /*continue + if, 继续执行本层剩下循环*/
+            for(var i = 1; i<10; i++){
+                if(i == 1){
+                    continue;
+                    console.log(i);
+                }
+                console.log("第"+i+"次循环"+"...");
+            }
+
+            /*return + if, 跳出所有循环*/
+            /*for(var j =1 ; j<10;j++){
+                for(var i = 1; i<10; i++) {
+                    if (i == 1) {
+                        console.log(i);
+                        return;
+                    }
+                    console.log("第" + i + "次循环" + "...");
+                }
+            }*/
+
+
+            var outer = 1;
+            var inner = 1;
+            var inner1 = 1;
+            /*break跳出本层循环*/
+            /*for(var i = 1; i<5; i++){
+                outer++;
+                for(var j = 1; j<3; j++){
+                    inner++;
+                    console.log("inner="+inner);
+                    break;
+                    inner1 = inner*100;
+                    console.log("inner1="+inner1);
+                }
+                console.log("outer="+outer);
+            }*/
+
+            /*continue跳出本次循环，完成本层剩下循环*/
+            /*for(var i = 1; i<5; i++){
+                outer++;
+                for(var j = 1; j<3; j++){
+                    inner++;
+                    console.log("inner="+inner);
+                    continue;
+                    inner1 = inner*100;
+                    console.log("inner1="+inner1);
+                }
+                console.log("outer="+outer);
+            }*/
+
+            /*return跳出所有循环*/
+            /*for(var i = 1; i<5; i++){
+                outer++;
+                for(var j = 1; j<3; j++){
+                    inner++;
+                    console.log("inner="+inner);
+                    return;
+                    inner1 = inner*100;
+                    console.log("inner1="+inner1);
+                }
+                console.log("outer="+outer);
+            }*/
+
+        }();
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
