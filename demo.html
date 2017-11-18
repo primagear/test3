@@ -110,6 +110,83 @@
                 console.log("outer="+outer);
             }*/
 
+           
+            
+            // for - if - switch - break - continue - return
+            /*for(var i = 0; i<5; i++){
+                for(var j = 0; j<8;j++){
+                    switch(j){
+                    case 1:
+                        console.log("外层:"+i+",内层:"+j+"的case1");
+                        break;
+                    case 2:
+                        console.log("外层:"+i+",内层:"+j+"的case2");
+                        break;
+                    default:
+                        break;
+                    }
+                }
+            }*/
+
+            /*for(var i = 0; i<5; i++){
+                for(var j = 0; j<8;j++){
+                    switch(j){
+                    case 1:
+                        console.log("外层:"+i+",内层:"+j+"的case1");
+                        return;
+                    case 2:
+                        console.log("外层:"+i+",内层:"+j+"的case2");
+                        break;
+                    default:
+                        break;
+                    }
+                }
+            }*/
+
+
+            /*for(var i = 0; i<5; i++){
+                for(var j = 0; j<8;j++){
+                    // break跳出本层循环
+                    if(j<3){
+                        console.log("内层j:"+j);
+                        break;
+                    }
+                    console.log("内层j x 100 = " + j*100);
+                }
+                console.log("外层i:"+i);
+            }*/
+
+
+            /*for(var i = 0; i<5; i++){
+                for(var j = 0; j<8;j++){
+                    // continue跳出本次循环
+                    if(j<3){
+                        console.log("内层j:"+j);
+                        continue;
+                    }
+                    console.log("内层j x 100 =" + j*100);
+                }
+                console.log("外层i:"+i);
+            }*/
+
+
+            /*for(var i=0;i<5;i++){
+                if(i<3){
+                    console.log("bingo");
+                    break;
+                }
+                console.log(i);
+            }*/
+
+            /*for(var i=0;i<5;i++){
+                if(i<3){
+                    console.log("bingo");
+                    return;
+                }
+                console.log(i);
+            }*/
+            
+            
         }();
 
 
